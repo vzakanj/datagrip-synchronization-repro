@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  db:
+    container_name: datagrip_postgres_synchronization_repro
+    image: postgres:9.5
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d/
