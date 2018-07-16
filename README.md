@@ -61,5 +61,9 @@ After going through the reproduction steps, clicking the synchronize button on a
 ## Expected behavior
 Clicking the synchronize button (at least on the data source) should show the changes (i.e. in this case show the last_name column)
 
-## Workaround
-The only workaround I've found for this issue is to delete the data source from the Database window in DataGrip and then recreate it.
+## Workarounds
+Currently 2 workarounds, 1. is more practical since it doesn't require reentering database information
+
+1. Right click the database in the database view, choose "Database Tools -> Forget Cached Schemas"
+
+2. delete the data source from the Database window in DataGrip and then recreate it
